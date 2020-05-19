@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+
+body {
+    font-family: 'Advent Pro', monospace;
+}
+
+/* adds a margin to the nav element so that it is inline with the header bars and stuff*/
+nav {
+    margin: 0.5em 1em;
+}
+
+/*
+    Removes the styling from the unordered list inside the nav bar, so we can turn it into a menu.
+    adding the flex display stops each item from being on new lines 
+*/
+nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+
+/*
+ we wat the text to be postioned in the middle of each list item in the navbars unordered list.
+ also, be 25% of the page width
+*/
+nav ul li {
+    text-align: center;
+    width: 25%;
+}
+
+/* sets the display of the anchors so we can add padding and stuff, also fill the list item that is 25% of the screen*/
+nav ul li a {
+    display:  inline-block;
+    width: 100%;
+    padding: 1em 0em;
+}
+
+/* kill any link styling, since the list items in the nav bar are styled like buttons.*/
+nav ul li a:active,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+div.title {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em 1em;
+    font-size: 1em;
+
+}
+
+div.title a:hover,
+div.title a:link,
+div.title a:active,
+div.title a:visited {
+    color:black;
+    text-decoration:none;
+}
+
+div.navbar {
+    padding: 0.25em 1em;
+    margin: 0.5em 1em;
+    font-size: 0.5em;
+    /* display: flex ;*/
+}
+
+div.header {
+    padding: 0.25em 1em;
+    margin: 0.5em 1em;
+    text-align: center;
+
+}
+
+div.header a:visited,
+div.header a:active,
+div.header a:link {
+    color: black;
+    text-decoration: none;
+}
+
+div.header a:hover {
+    color: grey;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.pink {
+    background-color:#ffbfe9;
+}
+
+.mint {
+    background-color:#8fffd8;
+    transition: 0.2s;   
+}
+
+nav ul li.mint:hover {
+    background-color: #7fefc8;
+    transition: 0.2s;   
+}
+
+.purple {
+    transition: 0.2s;   
+    background-color:#d88fff;    
+}
+nav ul li.purple:hover {
+    transition: 0.2s;   
+    background-color:#c87fef;    
+}
+
+.orange{
+    background-color: #ffb18f;
+}
+
+div.image-container {
+    background-color:white;
+    border: 1px solid pink;
+    margin: 50px;
+    text-align: center;
+}
+
+a:link {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #d88fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: deeppink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+li.recipe a:visited,
+li.recipe a:active,
+li.recipe a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+li.recipe a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+ul.recipes {
+     list-style-type: none;
+     margin: 0.5em 1em;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+ul li.recipe {
+    margin: 0.5em 0.25em;
+    text-align: center;
+    background-color: #ffbfe9;
+    padding: 0.5em 0.5em;
+}
+
+ul li.recipe a div {
+    padding: 0.5em;
+    margin-top: 0.25em;
+    background-color: white;
+}
+
+div.twitter-feed {
+    display: flex;
+    margin: 0.5em 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em
+}
+
+div.twitter-feed iframe {
+    margin-left: auto;
+    margin-right: auto;
+}
