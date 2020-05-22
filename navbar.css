@@ -1,0 +1,85 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+nav ul li.mint:hover {
+    background-color: #7fefc8;
+    transition: 0.2s;   
+}
+
+nav ul li.purple:hover {
+    transition: 0.2s;   
+    background-color:#c87fef;    
+}
+
+nav ul li.pink:hover {
+    background-color: pink;
+    transition: 0.2s;   
+}
+
+nav ul li.yellow:hover {
+    transition: 0.2s;   
+    background-color:yellow;    
+}
+
+nav ul li.pink {
+    border-bottom: pink 0.2em solid;
+}
+
+nav ul li.mint {
+    border-bottom: #7fefc8 0.2em solid;
+}
+
+nav ul li.yellow {
+    border-bottom: yellow 0.2em solid;
+}
+
+nav ul li.purple{
+    border-bottom: #c87fef 0.2em solid;
+}
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: pink;
+    color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 22%;
+    margin-top: 0.125em;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding-left: 2em;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

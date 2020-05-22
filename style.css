@@ -4,15 +4,10 @@ body {
     font-family: 'Advent Pro', monospace;
 }
 
-/* adds a margin to the nav element so that it is inline with the header bars and stuff*/
 nav {
     margin: 0.5em 1em;
 }
 
-/*
-    Removes the styling from the unordered list inside the nav bar, so we can turn it into a menu.
-    adding the flex display stops each item from being on new lines 
-*/
 nav ul {
      list-style-type: none;
      margin: 0;
@@ -21,17 +16,11 @@ nav ul {
      justify-content: space-between;
 }
 
-
-/*
- we wat the text to be postioned in the middle of each list item in the navbars unordered list.
- also, be 25% of the page width
-*/
 nav ul li {
     text-align: center;
     width: 25%;
 }
 
-/* sets the display of the anchors so we can add padding and stuff, also fill the list item that is 25% of the screen*/
 nav ul li a {
     display:  inline-block;
     width: 100%;
@@ -43,7 +32,7 @@ nav ul li > div {
     width: 100%;
     padding: 1em 0em;
 }
-/* kill any link styling, since the list items in the nav bar are styled like buttons.*/
+
 nav ul li a:active,
 nav ul li a:hover,
 nav ul li a:visited,
@@ -93,33 +82,6 @@ div.header a:hover {
     color: grey;
     text-decoration: underline;
     transition: 0.2s;
-}
-
-.pink {
-    background-color:#ffbfe9;
-}
-
-.mint {
-    background-color:#8fffd8;
-    transition: 0.2s;   
-}
-
-nav ul li.mint:hover {
-    background-color: #7fefc8;
-    transition: 0.2s;   
-}
-
-.purple {
-    transition: 0.2s;   
-    background-color:#d88fff;    
-}
-nav ul li.purple:hover {
-    transition: 0.2s;   
-    background-color:#c87fef;    
-}
-
-.orange{
-    background-color: #ffb18f;
 }
 
 div.image-container {
@@ -200,57 +162,3 @@ div.twitter-feed iframe {
     margin-left: auto;
     margin-right: auto;
 }
-
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: pink;
-    color: black;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 22%;
-    margin-top: 0.125em;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    z-index: 1;
-    /* margin: 0.5px */
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding-left: 2em;
-    width: 100%;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
